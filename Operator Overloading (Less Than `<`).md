@@ -26,31 +26,23 @@ To write a Python program that demonstrates **operator overloading** by overload
 
 ##  Program
 ```
- class Beans ():
-     def type(self):
-        print("Vegetable")
-     def color(self):
-        print("Green")
-
-  class Mango ():
-     def type(self):
-        print("Fruit")
-     def color(self):
-        print("Yellow")
-
-     def func(obj):
-        obj.type()
-        obj.color()
-
-  obj_beans = Beans()
-  obj_mango = Mango()
-  func(obj_beans)
-  func(obj_mango)
+class A:
+    def __init__(self,a):
+        self.a=a
+    def __gt__(self,other):
+        return self.a<other.a
+ob1=A(200)
+ob2=A(30)
+if(ob1<ob2):
+    print("ob2 is less than ob1")
+else:
+    print("ob1 is less than ob1")
 ```
 
 ## Output
-<img width="518" height="290" alt="image" src="https://github.com/user-attachments/assets/c9977dff-0e19-41a9-887c-00b1cbe7c0ca" />
+<img width="603" height="184" alt="image" src="https://github.com/user-attachments/assets/8ea185b0-a81a-4735-adce-85e9c6eb4a47" />
+
 
 
 ## Result
-Thus, the program to implement Polymorphism with Classes in Python was executed successfully and produced the expected result.
+Thus, the program to implement Operator Overloading (Less Than <) in Python was executed successfully and produced the expected result.
