@@ -1,12 +1,12 @@
-# 🐍 Python OOP: Operator Overloading (Less Than `<`)
+# Python OOP: Operator Overloading (Less Than `<`)
 
-## 🎯 AIM
+##  AIM
 
 To write a Python program that demonstrates **operator overloading** by overloading the **less than (`<`)** operator using a custom class.
 
 ---
 
-## 🧠 ALGORITHM
+##  ALGORITHM
 
 1. **Create Class `A`**:
    - Define the `__init__()` method to initialize the object with a value `a`.
@@ -24,8 +24,33 @@ To write a Python program that demonstrates **operator overloading** by overload
 
 ---
 
-## 💻 Program
+##  Program
+```
+ class Beans ():
+     def type(self):
+        print("Vegetable")
+     def color(self):
+        print("Green")
+
+  class Mango ():
+     def type(self):
+        print("Fruit")
+     def color(self):
+        print("Yellow")
+
+     def func(obj):
+        obj.type()
+        obj.color()
+
+  obj_beans = Beans()
+  obj_mango = Mango()
+  func(obj_beans)
+  func(obj_mango)
+```
 
 ## Output
+<img width="518" height="290" alt="image" src="https://github.com/user-attachments/assets/c9977dff-0e19-41a9-887c-00b1cbe7c0ca" />
+
 
 ## Result
+Thus, the program to implement Polymorphism with Classes in Python was executed successfully and produced the expected result.
